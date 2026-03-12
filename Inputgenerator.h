@@ -17,3 +17,15 @@ class FixedInputGenerator : public IInputGenerator {
 public:
     TurnInput generate(int round) const override;
 };
+
+/*
+ * WeightedRandomInputGenerator
+ *   New replacement generator — draws a value in 1-10 but weights
+ *   higher values more likely each round (simulates card hand scaling).
+ *   Replaces RandomInputGenerator in main.cpp.
+ *   RunSession is NOT modified.
+ */
+class WeightedRandomInputGenerator : public IInputGenerator {
+public:
+    TurnInput generate(int round) const override;
+};

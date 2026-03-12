@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1773323927 source:c:\users\lenovo\downloads\aa\ren\dp-week1-5224600037-renggadanara\inputgenerator.cpp
+	"InputGenerator.h"
+	<cstdlib>
+
+1773323927 c:\users\lenovo\downloads\aa\ren\dp-week1-5224600037-renggadanara\inputgenerator.h
+	"TurnInput.h"
+
+1773323927 c:\users\lenovo\downloads\aa\ren\dp-week1-5224600037-renggadanara\turninput.h
+
+1773323927 source:c:\users\lenovo\downloads\aa\ren\dp-week1-5224600037-renggadanara\main.cpp
+	<cstdlib>
+	<ctime>
+	"InputGenerator.h"
+	"ScoreSystem.h"
+	"RewardSystem.h"
+	"ShopSystem.h"
+	"RunSession.h"
+
+1773323927 c:\users\lenovo\downloads\aa\ren\dp-week1-5224600037-renggadanara\scoresystem.h
+	"TurnInput.h"
+
+1773323927 c:\users\lenovo\downloads\aa\ren\dp-week1-5224600037-renggadanara\rewardsystem.h
+
+1773323927 c:\users\lenovo\downloads\aa\ren\dp-week1-5224600037-renggadanara\shopsystem.h
+	<iostream>
+	<string>
+	<vector>
+
+1773323927 c:\users\lenovo\downloads\aa\ren\dp-week1-5224600037-renggadanara\runsession.h
+	"InputGenerator.h"
+	"ScoreSystem.h"
+	"RewardSystem.h"
+	"ShopSystem.h"
+
+1773323927 source:c:\users\lenovo\downloads\aa\ren\dp-week1-5224600037-renggadanara\rewardsystem.cpp
+	"RewardSystem.h"
+
+1773323927 source:c:\users\lenovo\downloads\aa\ren\dp-week1-5224600037-renggadanara\runsession.cpp
+	"RunSession.h"
+	<iostream>
+
+1773323927 source:c:\users\lenovo\downloads\aa\ren\dp-week1-5224600037-renggadanara\scoresystem.cpp
+	"ScoreSystem.h"
+
+1773323927 source:c:\users\lenovo\downloads\aa\ren\dp-week1-5224600037-renggadanara\shopsystem.cpp
+	"ShopSystem.h"
+
