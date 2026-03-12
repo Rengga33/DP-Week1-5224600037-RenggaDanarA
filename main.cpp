@@ -8,18 +8,23 @@
 #include "RunSession.h"
 
 /*
- * Swap any of these types to change behavior �
+ * Swap any of these types to change behavior —
  * RunSession and the phase order never need to change.
  *
- *   Generator : RandomInputGenerator | FixedInputGenerator
+ *   Generator : RandomInputGenerator         (uniform 1-10)
+ *             | WeightedRandomInputGenerator  (rolls 2 dice, takes best + round bonus)  ← ACTIVE
+ *             | FixedInputGenerator           (3, 6, 9)
  *   Scoring   : SimpleScoring        | BonusOddScoring
- *   Reward    : SimpleReward         | HalvingReward
+ *   Reward    : SimpleReward                          (gain == baseScore)
+ *             | FlatBonusReward                       (gain == baseScore + 2)           ← ACTIVE
+ *             | EvenRoundDoubleReward(currentRound)   (gain == baseScore * 2 on even rounds)
+ *             | HalvingReward                         (gain == baseScore / 2)
  */
-RandomInputGenerator inputSystem;
-SimpleScoring        scoreSystem;
-SimpleReward         rewardSystem;
-ShopSystem           shopSystem;
-a
+WeightedRandomInputGenerator inputSystem;
+SimpleScoring                scoreSystem;
+FlatBonusReward              rewardSystem;
+ShopSystem                   shopSystem;
+
 RunSession session(inputSystem, scoreSystem, rewardSystem, shopSystem);
 
 int main() {
